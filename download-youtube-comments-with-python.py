@@ -48,7 +48,7 @@ def scrape_comments_with_replies():
     while ("nextPageToken" in data):
 
         data = youtube.commentThreads().list(part='snippet', videoId=ID, pageToken=data["nextPageToken"],
-                                             maxResults='100', textFormat="plainText").execute()
+                                             maxResults='5000', textFormat="plainText").execute()
 
         for i in data["items"]:
             name = i["snippet"]['topLevelComment']["snippet"]["authorDisplayName"]
