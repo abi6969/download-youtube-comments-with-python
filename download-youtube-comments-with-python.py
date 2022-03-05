@@ -2,14 +2,14 @@
 # Watch the youtube video for explaination
 # https://youtu.be/B9uCX2s7y7A
 
-api_key = "xxxxXXXXxxxxXXXXxxxxXXXXxxxxXXXXxxxxXXX" # Replace this dummy api key with your own.
+api_key = "AIzaSyCTe40vJgrWLKFGkKnnMwW63q1uf3vJy7w" # Replace this dummy api key with your own.
 
 from apiclient.discovery import build
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 import pandas as pd
 
-ID = "FlkLANJmpPw" # Replace this YouTube video ID with your own.
+ID = "cs7fSaBdGTQ"
 
 box = [['Name', 'Comment', 'Time', 'Likes', 'Reply Count']]
 
